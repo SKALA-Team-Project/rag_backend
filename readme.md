@@ -8,11 +8,13 @@ docker-compose logs -f backend
 
 *# 3. MySQL 접속 확인*
 docker-compose exec db mysql -u user -p
+
 *# password 입력: password# 4. API 문서 확인# http://localhost:8000/docs* 
 
 # 데이터베이스 초기화
 
 MySQL 실행 확인# Docker Compose 사용 시
+
 docker-compose up -d db
 
 # 테이블 생성*
