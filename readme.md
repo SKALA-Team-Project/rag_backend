@@ -252,6 +252,6 @@ docker-compose up -d db
 - docker compose logs -f backend
 
 ---
-### Health API
-- `GET /api/v1/health/ping` → 서버 상태 확인
-- `GET /api/v1/health/score?eq_id=EQ001&hours=24` → 최근 24시간 기준 건강점수(0~100)
+### Health
+- **`v1/health` → 시스템 정상 작동 여부**
+- **`equipment/{eq_id}/health` → 설비별 정상도(건강 점수)**
