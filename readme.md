@@ -3,20 +3,72 @@
 ```bash
 tep-dashboard-backend/
 ├── app/
+│   ├── __init__.py
 │   ├── main.py
 │   ├── config.py
 │   ├── database.py
 │   │
 │   ├── models/
+│   │   ├── __init__.py
+│   │   ├── equipment.py
+│   │   ├── lot.py
+│   │   ├── timeseries.py
+│   │   ├── anomaly.py
+│   │   ├── prediction.py
+│   │   └── report.py
+│   │
 │   ├── schemas/
+│   │   ├── __init__.py
+│   │   ├── equipment.py
+│   │   ├── anomaly.py
+│   │   ├── prediction.py
+│   │   └── report.py
+│   │
 │   ├── api/
+│   │   ├── __init__.py
+│   │   └── v1/
+│   │       ├── __init__.py
+│   │       ├── kpi.py
+│   │       ├── equipment.py
+│   │       ├── anomaly.py
+│   │       ├── prediction.py
+│   │       └── report.py
+│   │
 │   ├── services/
+│   │   ├── __init__.py
+│   │   ├── kpi_service.py
+│   │   ├── equipment_service.py
+│   │   ├── anomaly_service.py
+│   │   ├── prediction_service.py
+│   │   └── report_service.py
+│   │
 │   ├── ml/
+│   │   ├── __init__.py
+│   │   ├── lstm_model.py
+│   │   ├── isolation_forest.py
+│   │   ├── predictor.py
+│   │   └── feature_importance.py
+│   │
 │   └── utils/
+│       ├── __init__.py
+│       ├── data_processor.py
+│       ├── logger.py
+│       └── tep_loader.py
 │
 ├── data/
+│   ├── models/
+│   │   ├── lstm_model.pt
+│   │   └── isolation_forest.pkl
+│   ├── tep_train.csv
+│   └── tep_test.csv
+│
 ├── scripts/
+│   ├── init_db.py
+│   ├── load_dummy_data.py
+│   └── train_models.py
+│
 ├── tests/
+│   └── test_api.py
 │
 ├── requirements.txt
 ├── Dockerfile
