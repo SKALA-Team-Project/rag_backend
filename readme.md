@@ -211,13 +211,6 @@ FastAPI 엔드포인트 정의 (버전 관리된 REST API)
 
 ---
 
-
-환경 설정 및 DB 연동 
-- **config.py**
- → .env 환경 변수를 기반으로 Pydantic Settings 구성 (APP_NAME, DATABASE_URL, DEBUG, CORS_ORIGINS 등) 
-- **database.py** → SQLAlchemy 엔진 및 세션 구성
----
-
 #### Docker Compose 사용
 
 1. Docker Compose로 MySQL + Backend 실행
