@@ -9,7 +9,7 @@ from app.models.lot import Lot, LotStatus
 from app.models.equipment import Equipment
 from app.models.anomaly import Anomaly, Severity
 
-router = APIRouter(prefix="/kpi", tags=["KPI"])
+router = APIRouter(prefix="/kpi", tags=["kpi"])
 
 @router.get("/summary")
 async def get_kpi_summary(db: Session = Depends(get_db)) -> Dict[str, Any]:

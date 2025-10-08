@@ -131,6 +131,7 @@ FastAPI 엔드포인트 정의 (버전 관리된 REST API)
 | **anomaly.py** | 이상 감지 결과 조회 및 관리 API |
 | **prediction.py** | LSTM 모델 기반 예측 결과 API |
 | **report.py** | PDF 리포트 생성 및 다운로드 API |
+| **health.py** | 시스템 및 설비의 실시간 건강 상태(Health Score) 조회 API |
 
 ---
 
@@ -249,3 +250,8 @@ docker-compose up -d db
 - docker compose up -d --build
 
 - docker compose logs -f backend
+
+---
+### Health API
+- `GET /api/v1/health/ping` → 서버 상태 확인
+- `GET /api/v1/health/score?eq_id=EQ001&hours=24` → 최근 24시간 기준 건강점수(0~100)

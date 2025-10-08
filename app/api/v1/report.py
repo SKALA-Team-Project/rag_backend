@@ -8,7 +8,7 @@ from app.database import get_db
 from app.schemas.report import ReportRequest, ReportResponse
 from app.services.report_service import ReportService
 
-router = APIRouter(prefix="/report", tags=["Report"])
+router = APIRouter(prefix="/report", tags=["report"])
 
 @router.post("/generate", response_model=ReportResponse)
 async def generate_report(

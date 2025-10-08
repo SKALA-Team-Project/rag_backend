@@ -6,7 +6,7 @@ from app.database import get_db
 from app.schemas.prediction import PredictionRequest, PredictionResponse
 from app.services.prediction_service import PredictionService
 
-router = APIRouter(prefix="/prediction", tags=["Prediction"])
+router = APIRouter(prefix="/prediction", tags=["prediction"])
 
 @router.post("/create", response_model=PredictionResponse)
 async def create_prediction(

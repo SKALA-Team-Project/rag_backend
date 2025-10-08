@@ -9,7 +9,7 @@ from app.schemas.anomaly import AnomalyResponse, AnomalyFilter
 from app.services.anomaly_service import AnomalyService
 from app.models.anomaly import AnomalyStatus
 
-router = APIRouter(prefix="/anomaly", tags=["Anomaly Detection"])
+router = APIRouter(prefix="/anomaly", tags=["anomaly"])
 
 @router.get("/list", response_model=List[AnomalyResponse])
 async def get_anomaly_list(
