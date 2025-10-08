@@ -29,5 +29,7 @@ docker-compose up -d
 
 # 재배포
 docker compose down
+
 docker compose up -d --build
+
 docker compose logs -f backend
