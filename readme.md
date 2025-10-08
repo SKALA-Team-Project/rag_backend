@@ -111,15 +111,16 @@ tep-dashboard-backend/
 #### Docker Compose 사용
 
 1. Docker Compose로 MySQL + Backend 실행
-docker-compose up -d
+- docker-compose up -d
 
-2. 로그 확인*
-docker-compose logs -f backend
+2. 로그 확인
+- docker-compose logs -f backend
 
-3. MySQL 접속 확인*
-docker-compose exec db mysql -u user -p
+3. MySQL 접속 확인
+- docker-compose exec db mysql -u user -p password 
+- 입력: password
 
-*# password 입력: password# 4. API 문서 확인# http://localhost:8000/docs* 
+4. API 문서 확인: http://localhost:8000/docs
 
 #### 데이터베이스 초기화
 
